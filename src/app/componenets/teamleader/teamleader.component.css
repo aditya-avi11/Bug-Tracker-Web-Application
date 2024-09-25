@@ -1,0 +1,26 @@
+.navtabs {
+    display: flex;
+    margin-top:2rem;
+    margin-left: 1rem;
+}
+.navtabs button{
+    background-color: #FFEB00;
+    margin-right: 2rem;
+}
+.bugdetails {
+    
+    padding: 1rem;
+}
+.bug-container {
+    margin: 1rem;
+}
+.bugbox {
+    background-color: white;
+    color: rgb(3, 75, 3);
+    padding: 1rem;
+    border-radius: 8px;
+    font-family: "Noto Sans JP", sans-serif;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    justify-content: space-between;
+}

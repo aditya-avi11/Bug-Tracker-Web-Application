@@ -1,0 +1,32 @@
+<div class="teamleader-container">
+    
+    <div class="navtabs">
+        <button class="btn  navtabstyle">New Bugs</button>
+        <button class="btn">Bug Status</button>
+    </div>
+    <br>
+    <div class="bug-container">
+        <h3>New Bugs reported by Tester :</h3>
+        <div class="bugreport" *ngIf="bugReportView">
+            <div class="bugdetails" *ngFor="let bug of bugDetails">
+                <div class="bugbox">
+                    <div class="bugsummary">
+                        <h5>Bug Name : {{ bug.bugName }}</h5>
+                        <p>Bug Description : {{ bug.description}}</p>
+                        <p>Due Date : {{ bug.duedate }}</p>
+                        <p>Priority : {{ bug.priority }}</p>
+                    </div>
+                    <div class="assignto">
+                        <p>Assign To : </p>
+                        <select>
+                            <option value="" disabled selected hidden><span style="color: gray;">Not assigned</span></option>
+                            <option *ngFor="let emp of teamMembers">{{ emp.empID + ' ' + emp.empName }}</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</div>
