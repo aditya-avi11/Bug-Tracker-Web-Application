@@ -17,8 +17,8 @@
                         <p>Priority : {{ bug.priority }}</p>
                     </div>
                     <div class="assignto">
-                        <p>Assign To : </p>
-                        <select>
+                        <p>Assigned To : </p>
+                        <select class="form-select" aria-label="Default select example">
                             <option value="" disabled selected hidden><span style="color: gray;">Not assigned</span></option>
                             <option *ngFor="let emp of teamMembers">{{ emp.empID + ' ' + emp.empName }}</option>
                         </select>
